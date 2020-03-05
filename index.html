@@ -7,8 +7,8 @@
             function connectBluetooth() 
             {
                 navigator.bluetooth.requestDevice({ acceptAllDevices: true, })
-                    .then(device => { /* ... */ })
-                    .catch(error => { console.log(error); });
+                    .then(device => { alert('device') })
+                    .catch(error => { alert(error); });
                                 }
         </script>
     </body>
