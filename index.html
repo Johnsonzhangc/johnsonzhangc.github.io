@@ -1,5 +1,15 @@
 <html>
     <body>
         hello, it's me.
+        <button id='bluetooth' onclick="connectBluetooth">connect</button>
+
+        <script>
+            function connectBluetooth() 
+            {
+                navigator.bluetooth.requestDevice({ acceptAllDevices: true, })
+                    .then(device => { /* ... */ })
+                    .catch(error => { console.log(error); });
+                                }
+        </script>
     </body>
 </html>
